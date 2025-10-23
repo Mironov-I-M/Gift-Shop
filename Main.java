@@ -23,7 +23,7 @@ public class Main {
             if (prices[middle] <= money) {
                 left = middle + 1;
             }
-            if (equals && prices[middle] > money) {
+            if (prices[middle] > money) {
                 right = middle - 1;
             }
             if (!equals && prices[middle] > money) {
@@ -32,4 +32,5 @@ public class Main {
         }
         return 0;
     }
+
 }
